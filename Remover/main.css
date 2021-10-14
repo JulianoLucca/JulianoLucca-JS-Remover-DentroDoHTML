@@ -1,0 +1,45 @@
+*{
+    text-align: center;
+}
+body{
+    background-color: #DDA0DD
+}
+
+button{
+    border:1px solid #25692A;
+border-radius:4px;
+display:inline-block;
+cursor:pointer;
+font-family:Verdana;
+font-weight:bold;
+font-size:13px;
+padding:6px 10px;
+text-decoration:none;
+}
+.container{
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.adicionados{
+    border: solid 2px white;
+
+}
+.rowtabela{
+    display: flex;
+}
+.item{
+    margin-right: 15%;
+    margin-left: 15%;
+}
+.botaoRemover {
+     border: solid 2px white;
+     margin-right: 7.5px;
+
+}
+.BottonAlterar{
+     border: solid 2px white;
+     margin-right: 7.5px;
+
+}

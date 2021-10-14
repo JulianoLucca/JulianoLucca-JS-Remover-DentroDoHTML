@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarefas</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+ <div class="container">
+  <h1>Escreve uma nova tarefa</h1>
+
+  <form>
+      <div class="container">
+         <center>
+            <input id="tarefa" type="text" required>
+
+               <button type="button" onclick="adicionar()">Adicionar</button>
+
+
+           </center>
+      </div>
+
+  </form>
+<br>
+        <div class="adicionados" id="tabela">
+            <div class="rowtabela">
+                <div class="item">
+                     <b><h2>Tarefas:</h2></b>
+                </div>
+             </div>
+        </div>
+
+    <script>
+
+ function adicionar(){
+var tabela = document.getElementById('tabela');
+var tarefa = document.getElementById("tarefa").value;
+var ped_id = document.body.querySelectorAll(".rowtabela").lengt;
+
+var novo_item = '<div class="rowtabela" id="'+ped_id+'">'
+
+
+  +'<div class="item">'+tarefa+'</div>'
+  +'<div class="BottonRemover">'
+  +'<button class="botaoRemover" onclick="remover(this)">REMOVER</button></div>'
+ 
+   
+   tabela.innerHTML += novo_item;
+}
+
+
+
+function remover(r){
+   r.parentNode.parentNode.outerHTML = '';
+}
+
+/*
+function muda(m){
+document.getElementById('t').style.color = 'green';
+}
+*/
+
+    </script>
+</body>
+</html>
